@@ -1,0 +1,50 @@
+@use 'src/styles/vars' as v;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.posts {
+  padding: v.$gutter 0;
+  max-width: 800px;
+  margin: 0 auto;
+  &__title {
+    color: v.$primary-color;
+    font-family: 'Lobster', sans-serif;
+    font-size: 3em;
+    margin-bottom: v.$gutter;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.post {
+  padding: v.$gutter;
+  @media (min-width: 800px) {
+    width: 50%;
+  }
+  &:hover {
+    background-color: v.$post-hover-color;
+    cursor: pointer;
+  }
+  &__title {
+    color: v.$dark-color;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: v.$gutter / 3;
+  }
+  &__category {
+    text-transform: uppercase;
+    color: v.$light-color;
+    background-color: v.$primary-color;
+    padding: v.$gutter / 4 v.$gutter / 3;
+    display: inline-block;
+    font-size: .8em;
+    margin-bottom: v.$gutter / 3;
+  }
+  &__content {
+    color: v.$post-text-color;
+
+  }
+}

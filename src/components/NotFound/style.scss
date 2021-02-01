@@ -1,0 +1,9 @@
+@use 'src/styles/vars' as vars;
+
+.notFound {
+    text-align: center;
+    &__title {
+        font-size: 4em;
+        margin: 3em 0;
+    }
+}

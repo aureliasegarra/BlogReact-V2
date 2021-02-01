@@ -1,0 +1,19 @@
+@use 'src/styles/vars' as v;
+
+.header {
+  text-align: center;
+  border: 1px solid v.$alt-color;
+  &__nav {
+    padding: v.$gutter;
+    & li {
+      display: inline-block;
+      margin: 0 v.$gutter / 2;
+    }
+  }
+  &__navlink {
+    color: v.$dark-color;
+    &:hover, &--active {
+      color: v.$primary-color;
+    }
+  }
+}
