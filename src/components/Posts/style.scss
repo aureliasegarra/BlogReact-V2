@@ -45,6 +45,13 @@
   }
   &__content {
     color: v.$post-text-color;
+    em {
+      font-style: italic;
+    }
+    strong {
+      font-weight: bold;
+      color: v.$dark-color;
+    }
 
   }
 }
